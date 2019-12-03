@@ -1,42 +1,21 @@
 {
   "name": "equidistant-color-hash",
   "version": "0.1.0",
-  "description": "",
+  "description": "Color hash that provides an array of equally spaced colors",
   "homepage": "https://ashwanth1109.github.io/equidistant-color-hash",
+  "main": "lib/index.js",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "babel index.js --out-dir lib",
+    "prepare": "npm run build"
   },
   "license": "MIT",
-  "dependencies": {
-    "gh-pages": "^2.1.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "babel-preset-nano-react-app": "^0.1.0",
-    "parcel-bundler": "^1.12.3"
-  },
-  "babel": {
-    "presets": [
-      "nano-react-app"
-    ],
-    "plugins": [
-      [
-        "@babel/plugin-proposal-class-properties",
-        {
-          "loose": true
-        }
-      ],
-      [
-        "@babel/plugin-transform-react-jsx",
-        {
-          "pragmaFrag": "React.Fragment"
-        }
-      ]
-    ]
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4"
   }
 }

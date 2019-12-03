@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
 
-import colorHasher from "../lib";
+import colorHasher from "../../lib";
 
 const sampleList = [
   "2kc7jlNJaGd4fJ9HaSm2U4B2",
