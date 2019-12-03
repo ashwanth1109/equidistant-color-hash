@@ -2,12 +2,16 @@
   "name": "equidistant-color-hash",
   "version": "0.1.0",
   "description": "",
+  "homepage": "https://ashwanth1109.github.io/equidistant-color-hash",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
