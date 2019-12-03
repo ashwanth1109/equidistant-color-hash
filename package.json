@@ -1,6 +1,6 @@
 {
   "name": "equidistant-color-hash",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Color hash that provides an array of equally spaced colors",
   "homepage": "https://ashwanth1109.github.io/equidistant-color-hash-example",
   "main": "lib/index.js",
